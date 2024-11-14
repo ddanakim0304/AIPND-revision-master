@@ -64,7 +64,7 @@ def print_results(results_dic, results_stats_dic, model,
           "***")
     print("{:20}: {:3d}".format('N Images', results_stats_dic['n_images']))
     print("{:20}: {:3d}".format('N Dog Images', results_stats_dic['n_dogs_img']))
-    print(f"Not-Dog Images:{results_stats_dic["n_notdogs_img"]}")
+    print(f"Not-Dog Images:{results_stats_dic['n_notdogs_img']}")
 
 
     # Prints summary statistics (percentages) on Model Run
@@ -87,7 +87,7 @@ def print_results(results_dic, results_stats_dic, model,
         for key in results_dic:
             # Pet Image Label is a Dog - Classified as NOT-A-DOG -OR- 
             # Pet Image Label is NOT-a-Dog - Classified as a-DOG
-            if results_dic[3] != results_dic[4]:
+            if results_dic[key][3] != results_dic[key][4]:
                 print(f"Pet Label: {results_dic[key][0]}")
                 print(f"Classifier Label: {results_dic[key][1]}")
 
