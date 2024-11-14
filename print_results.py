@@ -64,7 +64,7 @@ def print_results(results_dic, results_stats_dic, model,
           "***")
     print("{:20}: {:3d}".format('N Images', results_stats_dic['n_images']))
     print("{:20}: {:3d}".format('N Dog Images', results_stats_dic['n_dogs_img']))
-    print(f"Not-Dog Images:{results_stats_dic['n_notdogs_img']}")
+    print("{:20}: {:3d}".format('N Not-Dog Images', results_stats_dic['n_notdogs_img']))
 
 
     # Prints summary statistics (percentages) on Model Run

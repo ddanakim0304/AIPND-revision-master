@@ -320,7 +320,7 @@ Pct Corr dog: 100.0 Pct Corr NOTdog:  90.0  Pct Corr Breed:  90.0
 *** Results Summary for CNN Model Architecture RESNET ***
 N Images            :  40
 N Dog Images        :  30
-Not-Dog Images:10
+N Not-Dog Images    :  10
  
 % Match:             0
 % Correct Dogs:      100.0
@@ -329,3 +329,12 @@ Not-Dog Images:10
  
 
 INCORRECT Dog/NOT Dog Assignments:
+Pet Label: cat
+Classifier Label: norwegian elkhound, elkhound
+
+INCORRECT Dog Breed Assignment:
+Real:                     beagle   Classifier:  walker hound, walker foxhound
+Real:           golden retriever   Classifier:                       leonberg
+Real:             great pyrenees   Classifier:                         kuvasz
+
+** Total Elapsed Runtime: 0:0:2
