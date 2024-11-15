@@ -44,32 +44,32 @@ def get_pet_labels(image_dir):
 
     ## Creates empty dictionary named results_dic
     results_dic = dict()
-   
+    
     # Processes through each file in the directory, extracting only the words
     # of the file that contain the pet image label
-    for idx in range(0, len(filename_list), 1):
-       
-       # Skips file if starts with . (like .DS_Store of Mac OSX) because it 
-       # isn't an pet image file
-       if filename_list[idx][0] != ".":
-           
-           # Creates temporary label variable to hold pet label name extracted 
-           pet_label = ""
+    for filename in filename_list:
+        
+        # Skips file if starts with . (like .DS_Store of Mac OSX) because it 
+        # isn't a pet image file
+        if filename[0] != ".":
+            
+            # Creates temporary label variable to hold pet label name extracted 
+            pet_label = ""
 
-           word_list_pet_image = filename_list[idx].lower().split("_")
-           
-           for word in word_list_pet_image:
-               if word.isalpha():
-                   pet_label += word + " "
-           pet_label = pet_label.strip() # Correct variable name
+            word_list_pet_image = filename.lower().split("_")
+            
+            for word in word_list_pet_image:
+                if word.isalpha():
+                    pet_label += word + " "
+            pet_label = pet_label.strip() # Correct variable name
 
-           # If filename doesn't already exist in dictionary add it and it's
-           # pet label - otherwise print an error message because indicates 
-           # duplicate files (filenames)
-           if filename_list[idx] not in results_dic:
-              results_dic[filename_list[idx]] = [pet_label]
-           else:
-               print("** Warning: Duplicate files exist in directory:", 
-                     filename_list[idx])
+            # If filename doesn't already exist in dictionary add it and its
+            # pet label - otherwise print an error message because indicates 
+            # duplicate files (filenames)
+            if filename not in results_dic:
+                results_dic[filename] = [pet_label]
+            else:
+                print("** Warning: Duplicate files exist in directory:", 
+                    filename)
  
     return results_dic 
