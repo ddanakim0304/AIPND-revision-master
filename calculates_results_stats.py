@@ -121,5 +121,11 @@ def calculates_results_stats(results_dic):
                 results_stats_dic["pct_correct_notdogs"] = (results_stats_dic["n_correct_notdogs"] / results_stats_dic["n_notdogs_img"]) * 100
         else:
                 results_stats_dic["pct_correct_notdogs"] = 0
+
+        # calculate the percentage of correct matches
+        if results_stats_dic["n_images"] > 0:
+                results_stats_dic["pct_match"] = (results_stats_dic["n_match"] / results_stats_dic["n_images"]) * 100
+        else:
+                results_stats_dic["pct_match"] = 0
     # return the results statistics dictionary
     return results_stats_dic
