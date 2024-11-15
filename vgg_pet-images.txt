@@ -322,7 +322,7 @@ N Images            :  40
 N Dog Images        :  30
 N Not-Dog Images    :  10
  
-% Match:             0
+% Match:             87.5
 % Correct Dogs:      100.0
 % Correct Not-Dogs:  100.0
 % Correct Breed:     93.33333333333333
@@ -332,4 +332,4 @@ INCORRECT Dog Breed Assignment:
 Real:                     beagle   Classifier:  walker hound, walker foxhound
 Real:             great pyrenees   Classifier:                         kuvasz
 
-** Total Elapsed Runtime: 0:0:11
+** Total Elapsed Runtime: 0:0:4

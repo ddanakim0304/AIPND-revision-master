@@ -64,7 +64,7 @@ N Images            :   4
 N Dog Images        :   2
 N Not-Dog Images    :   2
  
-% Match:             0
+% Match:             100.0
 % Correct Dogs:      100.0
 % Correct Not-Dogs:  100.0
 % Correct Breed:     100.0

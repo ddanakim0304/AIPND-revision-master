@@ -322,7 +322,7 @@ N Images            :  40
 N Dog Images        :  30
 N Not-Dog Images    :  10
  
-% Match:             0
+% Match:             82.5
 % Correct Dogs:      100.0
 % Correct Not-Dogs:  90.0
 % Correct Breed:     90.0
@@ -337,4 +337,4 @@ Real:                     beagle   Classifier:  walker hound, walker foxhound
 Real:           golden retriever   Classifier:                       leonberg
 Real:             great pyrenees   Classifier:                         kuvasz
 
-** Total Elapsed Runtime: 0:0:2
+** Total Elapsed Runtime: 0:0:1

@@ -322,7 +322,7 @@ N Images            :  40
 N Dog Images        :  30
 N Not-Dog Images    :  10
  
-% Match:             0
+% Match:             75.0
 % Correct Dogs:      100.0
 % Correct Not-Dogs:  100.0
 % Correct Breed:     80.0
@@ -336,4 +336,4 @@ Real:           golden retriever   Classifier:                tibetan mastiff
 Real:             great pyrenees   Classifier:                         kuvasz
 Real:           golden retriever   Classifier:           afghan hound, afghan
 
-** Total Elapsed Runtime: 0:0:1
+** Total Elapsed Runtime: 0:0:0
